@@ -5,7 +5,10 @@
 - ```carRun.py``` - Contains the code to run the car in autonomous mode in the simulator.
 - ```self_driving_car.ipynb``` - Contains the data preprocessing and model building and training code.
 
-![driving](https://github.com/Dipankar-Medhi/self-driving-car/blob/master/driving_gif.gif)
-
 ### References
 - [Naoki ariticle](https://medium.com/@naokishibuya/introduction-to-udacity-self-driving-car-simulator-4d78198d301d)
+
+### Model testing
+<div> <img align = "left" width = "350" src = "https://github.com/Dipankar-Medhi/self-driving-car/blob/master/driving_gif.gif"><img align = 'right' width = "400" src = "https://github.com/Dipankar-Medhi/self-driving-car/blob/master/losses.jpg"> </div>
+
+

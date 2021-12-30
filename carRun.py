@@ -49,7 +49,7 @@ controller = SimplePIController(0.1, 0.002)
 set_speed = 9
 controller.set_desired(set_speed)
 
-# processing the live images captured during the testing phase
+#### processing the live images captured during the testing phase
 def image_preprocessing(image_array):
     # cropping image
     cropped_img = image_array[60:160, :]
@@ -76,8 +76,11 @@ def telemetry(sid, data):
         imgString = data["image"]
         image = Image.open(BytesIO(base64.b64decode(imgString)))
         image_array = np.asarray(image)
+        # applying the same image processing to the live images
+        # which was done while training the model
         image_array = image_preprocessing(image_array)
         image_array = np.array([image_array])
+        # predicting the steering value
         steering_angle = float(model.predict(image_array))
         print(steering_angle)
         throttle = controller.update(float(speed))

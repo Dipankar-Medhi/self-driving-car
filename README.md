@@ -9,4 +9,4 @@
 
 ### References
 - [Naoki ariticle](https://medium.com/@naokishibuya/introduction-to-udacity-self-driving-car-simulator-4d78198d301d)
-- Papiot [code](https://github.com/papiot/CarND-Behavioral-Cloning/blob/master/drive.py) for driving the car in the simulator. 
+- [Papiot's repo](https://github.com/papiot/CarND-Behavioral-Cloning/blob/master/drive.py) for driving the car in the simulator. 
